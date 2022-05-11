@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="132108" started-at="2022-05-09T16:52:28 BDT" finished-at="2022-05-09T16:54:40 BDT">
+    <groups>
+    </groups>
+    <test name="testcase1" duration-ms="132108" started-at="2022-05-09T16:52:28 BDT" finished-at="2022-05-09T16:54:40 BDT">
+      <class name="testcase1">
+        <test-method status="PASS" signature="StartBrowser()[pri:0, instance:testcase1@654f0d9c]" name="StartBrowser" is-config="true" duration-ms="23045" started-at="2022-05-09T16:52:28 BDT" finished-at="2022-05-09T16:52:51 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartBrowser -->
+        <test-method status="PASS" signature="Verifylinks()[pri:0, instance:testcase1@654f0d9c]" name="Verifylinks" duration-ms="107208" started-at="2022-05-09T16:52:51 BDT" finished-at="2022-05-09T16:54:38 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifylinks -->
+        <test-method status="PASS" signature="quitbrowser()[pri:0, instance:testcase1@654f0d9c]" name="quitbrowser" is-config="true" duration-ms="1569" started-at="2022-05-09T16:54:38 BDT" finished-at="2022-05-09T16:54:40 BDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitbrowser -->
+      </class> <!-- testcase1 -->
+    </test> <!-- testcase1 -->
+  </suite> <!-- Suite -->
+</testng-results>
