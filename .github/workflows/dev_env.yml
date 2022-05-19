@@ -61,6 +61,6 @@ jobs:
       steps:
       
       - name: wait
-        run: sleep 10
+        run: sleep 5
       
      
