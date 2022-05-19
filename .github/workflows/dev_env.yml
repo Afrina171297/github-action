@@ -33,7 +33,7 @@ jobs:
 
   build2:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
