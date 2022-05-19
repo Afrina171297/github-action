@@ -22,6 +22,14 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: trigger qa1 repo
+      uses: convictional/trigger-workflow-and-wait@v1.3.0
+      with:
+        owner: AfrinaZahan
+        repo: selenium-practice
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        workflow_file_name: QA_1.yml
+        
 
   build2:
 
@@ -37,3 +45,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: trigger qa2 repo
+      uses: convictional/trigger-workflow-and-wait@v1.3.0
+      with:
+        owner: AfrinaZahan
+        repo: selenium-practice
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        workflow_file_name: QA_2.yml
+        
