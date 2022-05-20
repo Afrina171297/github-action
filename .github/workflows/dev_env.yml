@@ -44,7 +44,7 @@ jobs:
 
   build2:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build1
 
     steps:
