@@ -26,13 +26,12 @@ jobs:
    - name: trigger in window #Will trigger workflow on EftiarHossain repo
      uses: actions/github-script@v6    
      with:
-      github-token: ${{ secrets.ACCESS_TOKEN_TRIGGER }}
+      github-token: ${{ secrets.ACCESS_TOKEN }}
       script: |
         await github.rest.actions.createWorkflowDispatch({
         owner: 'AfrinaZahan',
         repo: 'selenium-practice',
         workflow_id: 'QA_1.yml',
-        github_token: ${{ secrets.ACCESS_TOKEN }}
         ref: 'main'})
         
   build1:
