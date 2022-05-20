@@ -72,7 +72,14 @@ jobs:
         repo: SeleniumAssignment
         github_token: ${{ secrets.ACCESS_TOKEN }}
         workflow_file_name: maven.yml
-      
+        
+    - name: trigger another one repo
+      uses: convictional/trigger-workflow-and-wait@v1.3.0
+      with:
+        owner: soheldef123
+        repo: selenium
+        github_token: ${{ secrets.ACCESS_TOKEN }}
+        workflow_file_name: qa.yml
       
         
   build3:
