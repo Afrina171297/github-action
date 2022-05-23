@@ -23,7 +23,7 @@ jobs:
         cache: maven
    - name: Build with Maven
      run: mvn -B package --file pom.xml
-   - name: trigger in window #Will trigger workflow on EftiarHossain repo
+   - name: trigger in window 
      uses: actions/github-script@v6    
      with:
       github-token: ${{ secrets.ACCESS_TOKEN }}
